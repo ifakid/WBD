@@ -1,0 +1,48 @@
+a, a:link, a:visited, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: white;
+	font-size: 100;
+}
+body {
+	background: url(img/wp3996138.jpg) #8D93AB;
+}
+nav {
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.25;
+	background-color: #393B44;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-weight: bold;
+}
+nav li {
+	display: inline-block;
+	align-items: right;
+	padding: 10px 10px;
+	color: #fff;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+.container {
+	background-color: rgba(214,224,240,0.8);
+}
+.container div {
+	padding: 10px 10px;
+}
+.header {
+	margin-top: 200px;
+	color: rgb(214,224,240);
+}
+.left {
+	padding-right: 50%;
+}
+.right  {
+	padding-left: 50%;
+}
