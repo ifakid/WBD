@@ -38,6 +38,7 @@ p {
 #container {
 	background-color: rgba(214,224,240,0.8);
 	margin: auto 100px;
+	margin-bottom: 100px;
 }
 #container div {
 	padding: 5px 20px;
