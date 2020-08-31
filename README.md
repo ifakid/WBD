@@ -1,2 +1,2 @@
 # WBD
-Run about.html in browser
+Run index.html in browser
