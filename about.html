@@ -1,3 +1,5 @@
+<!-- -->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,49 +7,60 @@
 		<title>About me</title>
 	</head>
 	<body>
-		<nav>
+		<nav id="menu">
 			<ul>
-				<li><a href="javascript:dummyAlert()">Home</a></li>
+				<li><a href="javascript:void()" onclick="dummyAlert()">Home</a></li>
 				<li><a href="#top">About me</a></li>
+				<!--Just for fun-->
+				<li><a id="toggle" href="javascript:void()" onclick="toggleDarkMode()">Light Mode</a></li>
 			</ul>
 		</nav>
-		<div style="height: 50px;">
-			<h1 class="header center">About me</h1>
-		</div>
+		
+		<div style="height: 200px;"></div>
+		
 		<hr>
 		<div class="container">
+			<h1 class="center" id="about">About me</h1>
 			<div class="float">
 				<img id="profile" src="img/kiran.jpeg">
-				<span class="caption">
-					Name: Andjani Kirana
-				</span>
-				<span class="caption">
-					Birthdate: 20 October 2000
-				</span>
 			</div>
 			<div>
 				<p>
-					My name is Andjani Kirana, or Kirana for short. I'm currently on my fifth semester of studying Informatics at ITB. I started coding when I was in the 3rd year of highschool, when I discovered it. Since then, I've been fascinated by the puzzle-like nature of programming.
+					I'm Andjani Kirana, or Kirana for short. I started studying Informatics at ITB on 2018, and currently on my fifth semester studying there.
 				</p>
 				<div>
-					<h3>Education</h3>
+					<h3>Skills</h3>
 					<p>
-						After graduating from school, I went to Bandung and started studying at ITB's School of Electrical Engineering and Informatics on mid-2018.
+						I have experience in using several programming languages. Although the programming languages I use the most are Java, Python, and C++.
 					</p>
 				</div>
 				<div>
 					<h3>Hobbies</h3>
 					<p>
-						I mostly spend my free time doing online coding exercises, mostly in C++ or Python language. At other times, I write short stories. I also study other languages during vacations, when I have plenty of time.
+						Depending on how busy I am, I do different things on my free time. On busier days, I usually do coding exercises I found online. During vacations, I study foreign languages (I brushed up my German this vacation!). 
 					</p>
 				</div>
 			</div>
-				
 		</div>
 
 		<script type="text/javascript">
+			var dark = true;
 			function dummyAlert(){
 				alert("Dummy button");
+			}
+			function toggleDarkMode(){
+				var tog = document.getElementById("toggle");
+				dark = !dark;
+				if (dark) {
+					document.body.style.backgroundImage = "url(img/bg.jpg)";
+					tog.innerHTML = "Light Mode";
+					document.getElementById("menu").style.backgroundColor = "#393B44";
+				}
+				else {
+					document.body.style.backgroundImage = "url(img/bg-invert.jpg)";
+					tog.innerHTML = "Dark Mode";
+					document.getElementById("menu").style.backgroundColor = "#c3c2bb";
+				}
 			}
 		</script>
 	</body>
