@@ -19,7 +19,7 @@
 		<div style="height: 200px;"></div>
 		
 		<hr>
-		<div class="container">
+		<div id="container">
 			<h1 class="center" id="about">About me</h1>
 			<div class="float">
 				<img id="profile" src="img/kiran.jpeg">
@@ -55,11 +55,13 @@
 					document.body.style.backgroundImage = "url(img/bg.jpg)";
 					tog.innerHTML = "Light Mode";
 					document.getElementById("menu").style.backgroundColor = "#393B44";
+					document.getElementById("container").style.backgroundColor = "rgba(214,224,240,0.8)";
 				}
 				else {
 					document.body.style.backgroundImage = "url(img/bg-invert.jpg)";
 					tog.innerHTML = "Dark Mode";
 					document.getElementById("menu").style.backgroundColor = "#c3c2bb";
+					document.getElementById("container").style.backgroundColor = "rgba(195,194,187,0.8)";
 				}
 			}
 		</script>
